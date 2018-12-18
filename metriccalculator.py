@@ -40,8 +40,10 @@ for l in filenames:
             else:
                 for dic in listdic:
                     if dic['name']==l:
+                        print("false negative-"+params['q'])
                         dic['false']['negative'] += 1
                     else:
+                        print("false positive-"+params['q'])
                         dic['false']['positive'] += 1
 a=[]
 b=[]
